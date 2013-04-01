@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -13,44 +12,42 @@
 
 <script type="text/javascript" src="bebo4lyf.js"></script>
 
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
+<script type="text/javascript">
+    function select_all(obj) {
+        var text_val=eval(obj);
+        text_val.focus();
+        text_val.select();
+        if (!document.all) return; // IE only
+        r = text_val.createTextRange();
+        r.execCommand('copy');
+    }
+</script>
 
 </head>
 
 <body>
 
 <div class="center">
+<h1>Bebo Stunnah 4 lyf Translator</h1>
 
-<table cellpadding="0" cellspacing="4" border="0" align="center">
-<tr>
-<td>
-
-<table>
-
-
-
-<tr><td class="hor" colspan="3"><h1>Bebo Stunnah 4 lyf Translator</h1></td></tr>
-
-<tr><td colspan="3">
-<!-- Begin Content -->
 
 <br />
-<form name="translate"><textarea name="translatethis" rows="15" ></textarea><br /><br /><input class="button" onclick="translateText(document.translate.translatethis.value)" type="button" value="Translate!"><br /><br /><textarea class="area" style="width: 75%; height: 50px" name="translated" rows="15" readonly="readonly" wrap="logical"></textarea> 
+<form name="translate">
+<textarea name="translatethis" >
+</textarea>
+<br /><br />
+<input class="button" onclick="translateText(document.translate.translatethis.value)" type="button" value="Translate!">
+<br /><br />
+<textarea class="area" name="translated" readonly="readonly" wrap="logical">
+</textarea> 
+<br /><br />
+<input class="button" value="copy to clipboard" onclick="select_all(translated)" type="button" value="Copy To Clipboard!"/>
 </form>
 
 
-</td></tr>
-
-<tr><td colspan="3"></td></tr>
-
 <br />
-
-
-
-</table>
-
-</td>
-</table>
 
 </div>
 
