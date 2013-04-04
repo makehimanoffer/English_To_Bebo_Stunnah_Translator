@@ -10,11 +10,49 @@
 <meta name="language" content="en" />
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '459453594125625', // App ID from the App Dashboard
+      channelUrl : 'http://apps.facebook.com/eng_to_bebo/', // Channel File for x-domain communication
+      status     : true, // check the login status upon init?
+      cookie     : true, // set sessions cookies to allow your server to access the session?
+      xfbml      : true  // parse XFBML tags on this page?
+    });
 
+    // Additional initialization code such as adding Event Listeners goes here
+
+  };
+
+  // Load the SDK's source Asynchronously
+  // Note that the debug version is being actively developed and might 
+  // contain some type checks that are overly strict. 
+  // Please report such bugs using the bugs tool.
+  (function(d, s, id, debug){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk', /*debug*/ false));
+</script>
+ <script src="http://connect.facebook.net/en_US/all.js"></script>
 <script type="text/javascript" src="bebo4lyf.js"></script>
-
+<iframe src="https://www.facebook.com/plugins/like.php?href=https://apps.facebook.com/eng_to_bebo/?fb_source=appcenter&fb_appcenter=1&_"
+        scrolling="no" frameborder="0"
+        style="border:none; width:450px; height:80px"></iframe>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=459453594125625";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript">
     function select_all(obj) {
         var text_val=eval(obj);
@@ -26,9 +64,43 @@
     }
 </script>
 
+
+
+
+
+
+
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=459453594125625";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body>
+
 
 <div class="center">
 <h1>Bebo Stunnah 4 lyf Translator</h1>
@@ -46,11 +118,20 @@
 <br /><br />
 <input class="button" value="copy to clipboard" onclick="select_all(translated)" type="button" value="Copy To Clipboard!"/>
 </form>
-
+7
 
 <br />
 
-</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=459453594125625";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+<div class="fb-send" data-href="https://apps.facebook.com/eng_to_bebo/"></div>
+<div class="fb-comments" data-href="https://apps.facebook.com/eng_to_bebo/" data-width="470" data-num-posts="10"></div>
 </body>
 </html>

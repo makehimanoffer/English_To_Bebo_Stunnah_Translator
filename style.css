@@ -30,11 +30,12 @@ h1, h2, h3 {
 
 .area{
    
-	background: transparent;
-	border: 1px double #DDD;
+	
+	border: 1px double #F00;
 	border-radius: 5px;
-	box-shadow: 0 0 5px #333;
-	color: #666;
+	box-shadow: 0 0 5px #F00;
+	color: #F00;
+	
 	float: left;
 	padding: 5px 10px;
 	width: 165px;
